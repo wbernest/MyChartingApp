@@ -21,11 +21,11 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
-
+import banner from './banner/banner.directive';
 import './app.scss';
 
 angular.module('myChartingAppApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, navbar, footer, main, constants, socket, util
+  uiBootstrap, navbar, footer, main, constants, socket, util, banner
 ])
   .config(routeConfig);
 
